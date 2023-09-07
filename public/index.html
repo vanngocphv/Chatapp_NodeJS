@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Chat app</title>
+  </head>
+  <body>
+    <h1 class="title">ChatApp 💬</h1>
+    <div class="main">
+      <!-- Header setting Name -->
+      <div class="name">
+        <span><i class="fa-regular fa-user"></i></span>
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+          maxlength="20"
+        />
+      </div>
+      <!-- body container message -->
+      <ul class="message-container" id="message-container">
+        <!-- for other message -->
+        <!-- <li class="message-left">
+          <p class="message">
+            Lorem ipsum dolor <span>UserName　●　2023/09/06 12:10</span>
+          </p>
+        </li>
+        <li class="message-right">
+          <p class="message">Lorem ipsum <span>●　2023/09/06 12:11</span></p>
+        </li>
+        
+        <li class="client-feedback">
+          <p class="feedback" id="feedback">Someone is typing a message...</p>
+        </li>
+
+        <li class="message-feedback">
+          <p class="feedback" id="feedback">Someone is typing a message...</p>
+        </li> -->
+      </ul>
+
+      <!-- Footer sending/typing message -->
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+          Send <span><i class="fa-solid fa-paper-plane"></i></span>
+        </button>
+      </form>
+    </div>
+    <!-- Inform current total client connected -->
+    <h3 class="clients-total" id="clients-total"></h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
