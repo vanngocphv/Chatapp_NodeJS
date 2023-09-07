@@ -1,7 +1,7 @@
 # Program: Chat App (SocketIO)
 
 Program description: This program just basic NodeJS chat app, create by using SocketIO and ExpressJS <br />
-Guide from this [link](https://www.youtube.com/watch?v=RUL9yTzOTuU&list=PLdHg5T0SNpN09AlLBAYahKZUrAWsIL7No&index=1)
+Guide from this [link](https://www.youtube.com/watch?v=RUL9yTzOTuU&list=PLdHg5T0SNpN09AlLBAYahKZUrAWsIL7No&index=1) <br />
 Creator: NgocPHV <br />
 Date Created: 06/09/2023 <br />
 Date Finished: 07/09/2023 <br />
